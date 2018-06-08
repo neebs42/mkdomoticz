@@ -1,4 +1,5 @@
 #!/bin/bash
+export LC_ALL=C.UTF-8
 if [ -z ${TZ+x} ]; then export TZ=America/Chicago; fi
 rm /etc/localtime
 cd /etc; ln -s /usr/share/zoneinfo/$TZ localtime
